@@ -1,0 +1,16 @@
+{
+  "name": "maxghenis-plugins",
+  "description": "Claude Code plugins for research, policy analysis, and development",
+  "owner": {
+    "name": "Max Ghenis",
+    "email": "max@policyengine.org",
+    "url": "https://github.com/MaxGhenis"
+  },
+  "plugins": [
+    {
+      "name": "academic-referee",
+      "source": "./plugins/academic-referee",
+      "description": "Multi-perspective academic paper review with journal-matched referee personas"
+    }
+  ]
+}

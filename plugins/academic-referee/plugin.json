@@ -1,0 +1,21 @@
+{
+  "name": "academic-referee",
+  "version": "0.1.0",
+  "description": "Simulate academic peer review with journal-matched referee personas. Find suitable journals, generate domain-expert reviewers, run parallel reviews, iterate until acceptance.",
+  "author": {
+    "name": "Max Ghenis",
+    "email": "max@policyengine.org"
+  },
+  "keywords": [
+    "academic",
+    "peer-review",
+    "research",
+    "journal",
+    "referee",
+    "reproducibility"
+  ],
+  "repository": "https://github.com/MaxGhenis/claude-plugins",
+  "commands": "./commands/",
+  "agents": "./agents/",
+  "skills": "./skills/"
+}
