@@ -1,5 +1,6 @@
 {
   "name": "maxghenis-plugins",
+  "version": "1.0.0",
   "description": "Claude Code plugins for research, policy analysis, and development",
   "owner": {
     "name": "Max Ghenis",
