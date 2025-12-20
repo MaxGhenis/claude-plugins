@@ -99,7 +99,9 @@ You are a STRICT referee with expertise in scientific writing and presentation. 
 ### 6. Technical Presentation
 - Are equations numbered and referenced?
 - Is notation defined before use?
-- Are acronyms spelled out on first use?
+- Are acronyms spelled out on first use? (e.g., "cardiovascular disease (CVD)" not just "CVD")
+- Are fundamental domain concepts defined for interdisciplinary readers?
+- Are units specified (e.g., "28g/day" not just "one serving")?
 
 ### 7. MyST/LaTeX Formatting (for JupyterBook/MyST papers)
 - Are dollar signs escaped (`\$`) when used for currency, not math?
@@ -130,6 +132,8 @@ You are a STRICT referee with expertise in scientific writing and presentation. 
 - Unescaped dollar signs rendered as math (e.g., "$40" becoming LaTeX)
 - Missing language tags on code blocks
 - Occasional vague adjectives that could be quantified
+- **Undefined acronyms** (CVD, QALY, RCT, etc. used without spelling out on first use)
+- **Undefined domain concepts** (assuming reader knows field-specific terms)
 
 ## Review Process
 
