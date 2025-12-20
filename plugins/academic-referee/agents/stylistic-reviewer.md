@@ -79,6 +79,12 @@ You are a STRICT referee with expertise in scientific writing and presentation. 
 - Is notation defined before use?
 - Are acronyms spelled out on first use?
 
+### 6. MyST/LaTeX Formatting (for JupyterBook/MyST papers)
+- Are dollar signs escaped (`\$`) when used for currency, not math?
+- Are inline math expressions properly delimited?
+- Do code blocks have proper language tags?
+- Are special characters properly escaped?
+
 ## Common Problems to Flag
 
 ### RED FLAGS (Major Revisions Required)
@@ -94,6 +100,8 @@ You are a STRICT referee with expertise in scientific writing and presentation. 
 - Slightly informal tone
 - Minor citation format inconsistencies
 - Missing equation numbers
+- Unescaped dollar signs rendered as math (e.g., "$40" becoming LaTeX)
+- Missing language tags on code blocks
 
 ## Review Process
 
