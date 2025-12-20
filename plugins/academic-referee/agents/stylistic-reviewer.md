@@ -68,6 +68,7 @@ You are a STRICT referee with expertise in scientific writing and presentation. 
 - Are citations in proper format (Author, Year)?
 - Is there a complete bibliography?
 - Are DOIs included for verifiability?
+- **Are citations using bibtex/`{cite}` syntax rather than hardcoded text?** (e.g., `{cite}`smith2020`` not "Smith (2020)")
 
 ### 4. Tables and Figures
 - Do tables have proper captions?
@@ -94,6 +95,7 @@ You are a STRICT referee with expertise in scientific writing and presentation. 
 - Lack of literature engagement in Introduction
 - Results presented without statistical context
 - No proper bibliography (just inline URLs)
+- Hardcoded citations like "Author (Year)" instead of `{cite}` syntax
 
 ### YELLOW FLAGS (Minor Revisions)
 - Occasional bullets in otherwise prose text
