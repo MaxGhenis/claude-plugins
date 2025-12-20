@@ -41,6 +41,7 @@ If no referee personas have been generated, use these defaults:
 - **domain**: Application domain specialist
 - **practitioner**: End-user perspective
 - **reproducibility**: Code/data/replication focus
+- **stylistic**: Writing style and presentation expert
 
 ## Referees to Run
 {{ referees | default: "all" }}
