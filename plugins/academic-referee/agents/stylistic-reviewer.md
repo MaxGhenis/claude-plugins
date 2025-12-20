@@ -92,6 +92,9 @@ You are a STRICT referee with expertise in scientific writing and presentation. 
 - Is there a complete bibliography?
 - Are DOIs included for verifiability?
 - **Are citations using bibtex/`{cite}` syntax rather than hardcoded text?** (e.g., `{cite}`smith2020`` not "Smith (2020)")
+- **Use `{cite:p}` for parenthetical citations** - never wrap `{cite}` in parentheses (causes double parens)
+  - WRONG: `({cite}`smith2020`)` → renders as "(Smith (2020))"
+  - CORRECT: `{cite:p}`smith2020`` → renders as "(Smith, 2020)"
 - **Data sources must be cited** (e.g., "USDA FoodData Central" needs a reference, not just a name)
 
 ### 5. Tables and Figures
@@ -137,6 +140,7 @@ You are a STRICT referee with expertise in scientific writing and presentation. 
 - Occasional vague adjectives that could be quantified
 - **Undefined acronyms** (CVD, QALY, RCT, etc. used without spelling out on first use)
 - **Undefined domain concepts** (assuming reader knows field-specific terms)
+- **Double-parentheses citations** (`({cite}`key`)` instead of `{cite:p}`key``)
 
 ## Review Process
 
