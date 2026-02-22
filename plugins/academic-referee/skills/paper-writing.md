@@ -35,6 +35,16 @@ MyST does NOT convert ASCII dashes to Unicode. Use actual Unicode characters:
 
 - **Hyphen** (`-`): Only for compound words (`income-based`, `well-known`).
 
+### LaTeX escapes that MyST renders literally
+
+`vs.\ ` (LaTeX non-breaking space after period) renders as a literal backslash in MyST. Just use `vs.` directly:
+```
+WRONG: Gini 0.325 vs.\ 0.343
+RIGHT: Gini 0.325 vs. 0.343
+```
+
+Other LaTeX-isms to avoid in MyST: `\,` (thin space), `\;` (medium space), `\!` (negative space), `~` (non-breaking space in LaTeX, but just a tilde in MyST). Use plain spaces or Unicode non-breaking space (U+00A0) if needed.
+
 ### Currency and dollar signs
 
 Escape dollar signs for currency; unescaped `$` triggers math mode:
