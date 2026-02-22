@@ -35,15 +35,21 @@ MyST does NOT convert ASCII dashes to Unicode. Use actual Unicode characters:
 
 - **Hyphen** (`-`): Only for compound words (`income-based`, `well-known`).
 
-### LaTeX escapes that MyST renders literally
+### LaTeX backslash commands render literally
 
-`vs.\ ` (LaTeX non-breaking space after period) renders as a literal backslash in MyST. Just use `vs.` directly:
-```
-WRONG: Gini 0.325 vs.\ 0.343
-RIGHT: Gini 0.325 vs. 0.343
-```
+MyST is not LaTeX. Backslash commands outside of math mode are not interpreted — they render as literal text. Common offenders:
 
-Other LaTeX-isms to avoid in MyST: `\,` (thin space), `\;` (medium space), `\!` (negative space), `~` (non-breaking space in LaTeX, but just a tilde in MyST). Use plain spaces or Unicode non-breaking space (U+00A0) if needed.
+| LaTeX | Intended effect | MyST renders as | Fix |
+|---|---|---|---|
+| `vs.\ 0.343` | Normal space after abbreviation | `vs.\ 0.343` | `vs. 0.343` |
+| `\,` | Thin space | `\,` | Just use a space |
+| `\;` | Medium space | `\;` | Just use a space |
+| `\!` | Negative space | `\!` | Remove it |
+| `~` | Non-breaking space (LaTeX) | `~` (literal tilde) | Use Unicode NBSP (U+00A0) |
+| `\textbf{x}` | Bold | `\textbf{x}` | `**x**` |
+| `\emph{x}` | Italic | `\emph{x}` | `*x*` |
+
+Inside `$...$` math mode, LaTeX commands work normally. The issue is only in prose text.
 
 ### Currency and dollar signs
 
