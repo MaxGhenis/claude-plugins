@@ -42,6 +42,7 @@ If no referee personas have been generated, use these defaults:
 - **practitioner**: End-user perspective
 - **reproducibility**: Code/data/replication focus
 - **stylistic**: Writing style and presentation expert
+- **neutrality**: Policy neutrality and analytical scope (flags advocacy, speculation, and scope overreach)
 - **reference-validator**: Citation accuracy checker (uses `essential:reference-validator` agent to verify all citations support their claims)
 
 ## Referees to Run
